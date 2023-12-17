@@ -84,7 +84,7 @@ android {
         
         testBuildType System.getProperty('testBuildType', 'debug')
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
-        
+        manifestPlaceholders = [redirectScheme: rootProject.ext.adyenReactNativeRedirectScheme]
     }
     signingConfigs {
         debug {
